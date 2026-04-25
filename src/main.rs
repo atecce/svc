@@ -2,6 +2,8 @@ use book::Book;
 use source::Source;
 
 use std::collections::HashMap;
+use std::fs::File;
+use std::io::BufWriter;
 use std::sync::Arc;
 use std::sync::atomic::{AtomicBool, Ordering};
 
@@ -17,8 +19,8 @@ fn main() -> Result<()> {
     let model = GLiNER::<TokenMode>::new(
         Parameters::default(),
         RuntimeParameters::default(),
-        "./tokenizer.json",
-        "./model.onnx",
+        "/Users/atec/etc/tokenizer.json",
+        "/Users/atec/etc/model.onnx",
     )?;
 
     let mut index = HashMap::<String, Vec<Source>>::new();
@@ -68,7 +70,9 @@ fn main() -> Result<()> {
         }
     }
 
-    println!("{:#?}", serde_json::to_string(&index).unwrap());
+    let f = File::create("/Users/atec/index.json")?;
+    let w = BufWriter::new(f);
+    serde_json::to_writer(w, &index)?;
 
     Ok(())
 }

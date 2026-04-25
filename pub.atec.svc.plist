@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "~//Apple//DTD PLIST 1.0//EN" "http://apple.com">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>pub.atec.svc</string>
+
+    <key>Program</key>
+    <string>/Users/atec/bin/svc</string>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/svc.out</string>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/svc.err</string>
+</dict>
+</plist>

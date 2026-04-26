@@ -70,6 +70,8 @@ fn main() -> Result<()> {
         }
     }
 
+    println!("{:#?}", index);
+
     let f = File::create("/Users/atec/index.json")?;
     let w = BufWriter::new(f);
     serde_json::to_writer(w, &index)?;

@@ -109,9 +109,8 @@ dependencies = [
 [[package]]
 name = "bible"
 version = "0.1.0"
-source = "git+https://github.com/atecce/lib/?branch=swift#18b792df8e5698d23240e02ea0cc9cb612e476fa"
+source = "git+https://github.com/atecce/lib/?branch=name#a36be613feb2d75fd8b6f6ce381e430ad7da05b5"
 dependencies = [
- "book",
  "daemon",
  "deed",
  "gutenberg",
@@ -142,16 +141,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cdeb9d870516001442e364c5220d3574d2da8dc765554b4a617230d33fa58ef5"
 dependencies = [
  "objc2",
-]
-
-[[package]]
-name = "book"
-version = "0.1.0"
-source = "git+https://github.com/atecce/lib/?branch=swift#18b792df8e5698d23240e02ea0cc9cb612e476fa"
-dependencies = [
- "name",
- "serde",
- "uniffi",
 ]
 
 [[package]]
@@ -363,7 +352,7 @@ dependencies = [
 [[package]]
 name = "daemon"
 version = "0.1.0"
-source = "git+https://github.com/atecce/lib/?branch=swift#18b792df8e5698d23240e02ea0cc9cb612e476fa"
+source = "git+https://github.com/atecce/lib/?branch=name#a36be613feb2d75fd8b6f6ce381e430ad7da05b5"
 dependencies = [
  "deed",
  "name",
@@ -418,7 +407,7 @@ dependencies = [
 [[package]]
 name = "deed"
 version = "0.1.0"
-source = "git+https://github.com/atecce/lib/?branch=swift#18b792df8e5698d23240e02ea0cc9cb612e476fa"
+source = "git+https://github.com/atecce/lib/?branch=name#a36be613feb2d75fd8b6f6ce381e430ad7da05b5"
 dependencies = [
  "source",
  "uniffi",
@@ -691,7 +680,7 @@ dependencies = [
 [[package]]
 name = "gutenberg"
 version = "0.1.0"
-source = "git+https://github.com/atecce/lib/?branch=swift#18b792df8e5698d23240e02ea0cc9cb612e476fa"
+source = "git+https://github.com/atecce/lib/?branch=name#a36be613feb2d75fd8b6f6ce381e430ad7da05b5"
 dependencies = [
  "name",
 ]
@@ -1037,7 +1026,7 @@ dependencies = [
 [[package]]
 name = "name"
 version = "0.1.0"
-source = "git+https://github.com/atecce/lib/?branch=swift#18b792df8e5698d23240e02ea0cc9cb612e476fa"
+source = "git+https://github.com/atecce/lib/?branch=name#a36be613feb2d75fd8b6f6ce381e430ad7da05b5"
 dependencies = [
  "serde",
  "uniffi",
@@ -1633,9 +1622,9 @@ dependencies = [
 [[package]]
 name = "source"
 version = "0.1.0"
-source = "git+https://github.com/atecce/lib/?branch=swift#18b792df8e5698d23240e02ea0cc9cb612e476fa"
+source = "git+https://github.com/atecce/lib/?branch=name#a36be613feb2d75fd8b6f6ce381e430ad7da05b5"
 dependencies = [
- "book",
+ "name",
  "serde",
  "uniffi",
 ]
@@ -1681,7 +1670,6 @@ name = "svc"
 version = "0.1.0"
 dependencies = [
  "bible",
- "book",
  "ctrlc",
  "gline-rs",
  "name",

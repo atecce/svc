@@ -1,4 +1,3 @@
-use book::Book;
 use source::Source;
 
 use std::collections::HashMap;
@@ -55,7 +54,7 @@ fn main() -> Result<()> {
                     );
 
                     let src = Source {
-                        book: Book { name: *book },
+                        book: *book,
                         chapter: (i + 1).try_into().unwrap(),
                         verses: [(span.sequence() + 1).try_into().unwrap(), (span.sequence() + 1).try_into().unwrap()],
                     };
